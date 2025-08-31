@@ -67,10 +67,10 @@ function App() {
       };
     });
   }
-const ctxValue = {
-  items: shoppingCart.items,
-}
-
+  const ctxValue = {
+    items: shoppingCart.items,
+    addItemToCart: handleAddItemToCart,
+  };
 
   return (
     <CartContext.Provider value={ctxValue}>
